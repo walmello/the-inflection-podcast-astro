@@ -1,0 +1,22 @@
+---
+import Container from "./Container.astro"
+---
+
+<section>
+  <Container>
+    <div style={Astro.props.style}>
+      <slot/>
+    </div>
+  </Container>
+</section>
+
+<style>
+  div {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+</style>

@@ -1,0 +1,33 @@
+---
+import Section from "../elements/layout/Section.astro"
+import TestimonialCard from "../elements/cards/Testimonial.astro"
+import Col from "../elements/layout/Col.astro"
+---
+	<Section style={{
+    justifyContent: 'start',
+  }}>
+  <Col>
+    <Col>
+      <h2>Discover how the Inflection Community has transformed the journeys of entrepreneurs, professionals, and change-makers.</h2>
+		  <p>Hear firsthand how our resources, network, and support have made a lasting impact.</p>
+    </Col>
+    <div>
+      <TestimonialCard/>
+      <TestimonialCard/>
+      <TestimonialCard/>
+    </div>
+    <div>
+      <TestimonialCard/>
+      <TestimonialCard/>
+      <TestimonialCard/>
+    </div>
+  </Col>
+	</Section>
+
+
+<style>
+  div {
+    display: flex;
+    gap: 1rem;
+  }
+</style>

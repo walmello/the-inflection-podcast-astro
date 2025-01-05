@@ -1,22 +1,54 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
-</html>
+---
+import Footer from "../components/sections/Footer.astro";
+import Header from "../components/sections/Header.astro";
+---
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+	<style is:global>
+		:root {
+			--color-white: #EFF3F8;
+			--color-light: #D8E0EB;
+			--color-default: #267DCA;
+			--color-dark: #000F1C;
+			--color-black: #020308;
+		}
+
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		h1,h2,h3,h4,h5,h6 {
+			font-family: 'Josefin Sans', sans-serif;
+			text-transform: uppercase;
+		}
+
+		h1 {
+			font-size: 3rem;
+		}
+
+		html {
+			font-size: max(1vw);
+		}
+
+		body {
+			font-family: 'lato', sans-serif;
+			background-color: var(--color-white);
+			color: var(--color-dark);
+		}
+	</style>
+</head>
+<body>
+	<Header/>
+	<slot/>
+	<Footer/>
+</body>
+</html>

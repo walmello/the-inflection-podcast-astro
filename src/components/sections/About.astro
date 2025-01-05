@@ -1,0 +1,29 @@
+---
+import Section from "../elements/layout/Section.astro"
+---
+
+	<Section>
+    <div class="row">
+      <div class="col">
+        <h2>The Inflection Community is a curated network for entrepreneurs, professionals, and innovators who are ready to grow.</h2>
+        <p>The Inflection Community is a curated network for entrepreneurs, professionals, and innovators who are ready to grow. We provide exclusive resources, impactful events, and a supportive network to help you navigate key decisions and reach your next big milestone. Whether you’re scaling a business, advancing your career, or pursuing bold ideas, this is where growth begins.</p>
+        <p>Becoming a member of the Inflection Community means gaining access to the tools, connections, and insights you need to achieve your goals. Whether you’re seeking actionable resources, meaningful collaborations, or expert guidance, this community is designed to empower your growth. Join us to unlock exclusive opportunities, connect with like-minded individuals, and take your entrepreneurial journey to the next level.</p>
+      </div>
+      <img src="ImageGrid.png" alt="">
+    </div>
+	</Section>
+
+<style>
+  .col {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+</style>

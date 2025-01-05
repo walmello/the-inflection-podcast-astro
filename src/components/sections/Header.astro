@@ -1,0 +1,49 @@
+---
+import Logo from "../elements/icons/Logo.astro"
+import Menu from "../elements/icons/Menu.astro"
+import Button from "../elements/Button.astro"
+
+---
+
+	<header>
+		<div>
+      <Menu/>
+    </div>
+		<div>
+      <Logo/>
+    </div>
+		<div>
+      <Button href="#">Apply Now</Button>
+    </div>
+	</header>
+
+  <style>
+    header {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      padding: 0.5rem 2rem;
+      position: fixed;
+      left: 0;
+      right: 0;
+    }
+
+    header > *:nth-child(1){
+      display: flex;
+      justify-content: start;
+      align-items: center;
+    }
+
+    header > *:nth-child(2){
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+    header > :nth-child(3){
+      display: flex;
+      justify-content: end;
+      align-items: center;
+    }
+
+  </style>
