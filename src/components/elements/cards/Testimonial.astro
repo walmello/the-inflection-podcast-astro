@@ -1,9 +1,12 @@
 ---
 import Col from "../layout/Col.astro"
 import Row from "../layout/Row.astro"
+import Image from "astro/components/Image.astro"
+import photo from "../../../assets/Sample Photo.jpg"
 ---
 <Row>
   <img src="Sample Photo.jpg" alt="">
+  <Image src={photo} alt="testimonial photo"/>
   <div>
     <Col>
       <h3>Name</h3>
