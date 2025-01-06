@@ -7,4 +7,4 @@ thumbnail: /uploads/frame-55.png
 ---
 Testando aqui mudando e adicionando imagens
 
-![](/uploads/frame-55.png)
+![](/uploads/rectangle-14-1-.jpg)
