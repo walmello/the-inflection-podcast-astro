@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/Layout.astro
+layout: ../../layouts/Blog.astro
 slug: test-blog
 title: Test Blog
 date: 2025-01-06T01:03:39.699Z
