@@ -8,10 +8,11 @@ public_folder: "/uploads"
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
     label: "Blog" # Used in the UI
-    folder: "src/content/blog" # The path to the folder where the documents are stored
+    folder: "src/pages/blog" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields for each document, usually in frontmatter
+      - { label: "Slug", name: "slug", widget: "string", required: true, pattern: ["^[a-z0-9]+(?:-[a-z0-9]+)*$", "O slug deve conter apenas letras minúsculas, números e traços"] }
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Publish Date", name: "date", widget: "datetime", required: true, dateFormat: "YYYY-MM-DD", format: "YYYY-MM-DD" }
       - { label: "Featured Image", name: "thumbnail", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" } 
